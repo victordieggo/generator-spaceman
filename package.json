@@ -1,0 +1,43 @@
+{
+  "name": "generator-spaceman",
+  "version": "1.0.0",
+  "description": "HTML/CSS boilerplate to build websites and apps.",
+  "author": "Victor Diego <victordieggo@gmail.com>",
+  "homepage": "https://github.com/victordieggo/generator-spaceman#readme",
+  "keywords": [
+    "node"
+  ],
+  "main": "main.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "coverage": "jest --colors --coverage",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "jest": "jest --colors --verbose",
+    "lint": "eslint 'src/**/*.js' 'test/**/*.js'",
+    "start": "node main.js",
+    "test": "npm run lint && npm run jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/victordieggo/generator-spaceman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victordieggo/generator-spaceman/issues"
+  },
+  "dependencies": {
+    "esm": "3.2.25"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "7.10.4",
+    "@types/jest": "26.0.7",
+    "coveralls": "3.1.0",
+    "eslint": "7.5.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "jest": "26.1.0",
+    "prettier": "2.0.5"
+  },
+  "license": "MIT"
+}
